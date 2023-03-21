@@ -33,10 +33,37 @@
 .side-header{
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-name a{
+  color: #fafafa;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.create-chat a{
+  border: solid 1px lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  font-size: 10px;
+  text-decoration: none;
 }
 
 .side-main{
   height: calc(100vh - 100px);
   background-color: #2f3e51;
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.chat-room{
+  padding: 20px 0 40px 0;
+}
+
+.chat-room-name a{
+  color: white;
+  text-decoration: none;
 }
