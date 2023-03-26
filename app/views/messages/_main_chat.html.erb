@@ -12,16 +12,7 @@
 </div>
 
 <div class="chat-main">
-  <div class="chat-contents">
-    <div class="chat-title">
-      <div class="chat-name">
-      </div>
-      <div class="chat-date">
-      </div>
-    </div>
-    <div class="chat-content">
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <%= form_with model: [@room, @message], class: 'chat-footer', local: true do |f| %>
   <div class="chat-form">
